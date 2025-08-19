@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nestra</title>
+
+  <!-- Google Fonts & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  
+  <!-- CSS & JS -->
+  <link rel="stylesheet" href="style.css" />
+  <script src="index.js" defer></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1>Nestra</h1>
+    <div class="navbar-links">
+      <p><a href="index.html">Home</a></p>
+      <p><a href="collection.html">Collections</a></p>
+      <p><a href="contact.html">Contact</a></p>
+    </div>
+    <div class="navbar-menu-toggle" onclick="showNavbar()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Side Navbar -->
+  <div class="side-navbar">
+    <p style="text-align: right;"><i class="fa-solid fa-xmark" onclick="hideNavbar()"></i></p>
+    <div class="side-navbar-links">
+      <p><a href="index.html">Home</a></p>
+      <p><a href="collection.html">Collections</a></p>
+      <p><a href="contanct.html">Contact</a></p>
+     </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div>
+      <h1>Level up your style</h1>
+      <p>With our stunning collections</p>
+      <button class="header-button">Shop Now</button>
+    </div>
+    <div>
+      <img class="header-image" src="C:\Users\sakee\Downloads\OIP.jpg" width="200" height="200" />
+    </div>
+  </header>
+
+  <!-- Newsletter -->
+  <section class="news">
+    <h2>Join our Newsletter</h2>
+    <p>Sign up to get exclusive discounts, updates, and more.</p>
+    <input type="email" placeholder="Enter your email" />
+    <button>Subscribe</button>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <h2>Nestra</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="footer-icon-container">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+    </div>
+    <p>&copy; 2025 Nestra</p>
+  </footer>
+
+</body>
+</html>

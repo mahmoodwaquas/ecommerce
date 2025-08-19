@@ -1,0 +1,462 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.navbar-links {
+  display: flex;
+  column-gap: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #1d232c;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+  color: #1d232c;
+}
+
+.navbar-menu-toggle {
+  display: none;
+}
+
+/* Side Navbar */
+.side-navbar {
+  background-color: #1d232c;
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -60%;
+  padding: 20px;
+  color: white;
+  transition: left 2s ease;
+  z-index: 1000;
+}
+
+.side-navbar-link {
+  margin-bottom: 30px;
+}
+
+.side-navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: large;
+}
+
+.side-navbar-link a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px;
+}
+
+.header-button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #1d232c;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.header-button:hover {
+  background-color: #343a45;
+}
+.service{
+  padding: 20px;
+}
+
+.service-container-1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.service-container-2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.service-container-2 div{
+  background-color: #f2f4f7;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.new-arrival {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.new-arrival-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.new-arrival-btn img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.new-arrival-btn span {
+  margin-top: 10px;
+  color: #1d232c;
+  font-weight: bold;
+}
+
+.new-arrival-btn:hover {
+  transform: scale(1.05);
+}
+
+/* news*/
+
+.news{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.news input{
+  padding: 11px;
+  width: 80vw;
+  margin-bottom: 10px;
+  border: solid black 3px;
+}
+
+.news button{
+  margin-top: 10px;
+  color: #f2f4f7;
+  background-color: #1d232c;
+  border-radius: 10px;
+  padding: 10px;
+   
+}
+/*contacts page */
+
+
+/* ==============================
+   Global & Base Styling
+============================== */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ==============================
+   Navbar Styling
+============================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #111;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #ff4081;
+}
+
+.navbar-menu-toggle {
+  display: none; /* optional for mobile menu */
+}
+
+/* ==============================
+   Contact Section Styling
+============================== */
+.contact-section {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 40px 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* ==============================
+   Contact Form Styling
+============================== */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: black;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #333;
+}
+
+/* ==============================
+   Contact Info Styling
+============================== */
+.contact-info {
+  text-align: left;
+  margin-top: 40px;
+  line-height: 1.6;
+  color: #333;
+  font-size: 15px;
+}
+
+/* ==============================
+   Footer Styling
+============================== */
+.footer {
+  background-color: #111;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.footer h2 {
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin-bottom: 10px;
+  color: #aaa;
+}
+
+.footer-icon-container {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.footer-icon-container i {
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-icon-container i:hover {
+  color: #ff4081;
+}
+
+/* ==============================
+   Responsive
+============================== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact-section {
+    margin: 20px 10px;
+    padding: 30px 15px;
+  }
+}
+
+/* Collection Product Styling */
+
+.product-section {
+  margin-top: 20px;
+}
+
+.product-search {
+  width: 80%;
+  border: solid black 2px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: auto;
+}
+
+.product-search input {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+}
+
+.product-search input:focus {
+  outline: none;
+}
+
+.products {
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product-box {
+  text-align: center;
+  flex-basis: 20%;
+}
+
+.product-box img {
+  border-radius: 10px;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .navbar-menu-toggle {
+    display: block;
+  }
+  .service-container-1{
+    display: none;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+  .header-image{
+    display: none;
+  }
+  .service-container-1{
+    flex-direction: column;
+  }
+}
+
+
+.news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.news input {
+  padding: 11px;
+  width: 80vw;
+  max-width: 400px;
+  margin-bottom: 10px;
+  border: 3px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.news button {
+  margin-top: 10px;
+  color: #f2f4f7;
+  background-color: #1d232c;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.news button:hover {
+  background-color: #2d3b4a;
+}
+.footer{
+  margin-top: 20px;
+  padding: 40px;
+  background-color: #1d232c;
+  color: #f2f4f7;
+}
+
